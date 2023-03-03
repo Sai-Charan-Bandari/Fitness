@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'baron';
+    src: url(BaronNeue-Black.otf);
+}
+*{
+    font-family: 'baron';
+}
