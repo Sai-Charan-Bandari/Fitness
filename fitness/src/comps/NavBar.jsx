@@ -10,7 +10,7 @@ function NavBar() {
         <nav className="navbar navbar-expand-lg bg-dark  navbar-dark py-3" style={{display:'block'}}>
             <div className="container ">
 
-                <Link to="/" className="navbar-brand" style={{ fontSize: 30 }}><img src='mylogo.png' className='rounded-circle me-2' style={{
+                <Link to="https://github.com/Sai-Charan-Bandari/Fitness/tree/main/fitness" className="navbar-brand" style={{ fontSize: 30 }}><img src='mylogo.png' className='rounded-circle me-2' style={{
             width:50,
             height:50,
             // borderRadius: 60,
