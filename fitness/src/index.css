@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'baron';
-    src: url('BaronNeue-Black.otf');
+    src: url('../public/BaronNeue-Black.otf');
 }
 *{
     font-family: 'baron';
