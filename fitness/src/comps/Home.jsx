@@ -15,7 +15,16 @@ function Home() {
                 <div>
                     <h1 >Become a <span className="text-warning"> FITNESS MODEL </span></h1>
                     <p className="lead my-4"><span className="text-warning" >CROSSFIT</span> allows you to get your dream body by suggesting you an excellent diet along with the best training approaches by professional fitness coaches across the globe. </p>
-                    <Button href={!user ? '/profile' :'#fitness'} className="btn-primary btn-lg">START THE PRACTICE NOW</Button> 
+                    {/* whenever we want to navigate to other routes use only useNavigate or Link tag
+                    when u want to navigate to an element within the page use anchor tag
+                    ... 
+                    The bootstrap Button comp is generally anchor tag so we should not use href ... instead use onClick + useNavigate
+                    */}
+                    {!user ?
+                    <Button onClick={()=>nav('/profile')} className="btn-primary btn-lg">START THE PRACTICE NOW</Button> 
+                    :
+                    <Button href={'#fitness'} className="btn-primary btn-lg">START THE PRACTICE NOW</Button> 
+                    }
                 </div>
                 
                 <img className="img-fluid w-50 d-none d-sm-block" src="exerciseHowOften-944015592-770x533-1.jpg"/>
